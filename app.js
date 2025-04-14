@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       secs = getFullValue(secs);
 
       // Stop the timer at 1 minute 20 seconds (80,000ms)
-      if (elapsedTime >= 8000) {
+      if (elapsedTime >= 946000) {
         timePlaceholderEl.innerHTML = `${mins}:${secs}`;
         isRunning = false;
         clockEl.classList.remove("clock--started");
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Schedule removal of the "hidden" class after 2 minutes (120,000ms)
       messageTimeout = setTimeout(() => {
         imageContainer.classList.remove("hidden");
-      }, 12000);
+      }, 1860000);
     } else {
       isRunning = false;
       clockEl.classList.remove("clock--started");
